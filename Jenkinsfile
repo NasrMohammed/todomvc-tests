@@ -11,6 +11,7 @@ pipeline {
             //sh "rm -r cypress/results/*" 
             //sh "rm -r mochawesome-report/*"
            // sh "rm -r cypress/screenshots/*"
+            sh "mkdir /root/.cache"
             sh "chmod -R 777 *"
             sh "./node_modules/.bin/cypress install --force"
             sh "mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache"
