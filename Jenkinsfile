@@ -11,6 +11,7 @@ pipeline {
             //sh "rm -r cypress/results/*" 
             //sh "rm -r mochawesome-report/*"
            // sh "rm -r cypress/screenshots/*"
+            sh "npm install"
             sh "chmod -R 777 *"
             sh "./node_modules/.bin/cypress install --force"
             sh "npx cypress run --browser chrome"  
