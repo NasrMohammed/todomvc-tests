@@ -13,7 +13,7 @@ pipeline {
            // sh "rm -r cypress/screenshots/*"
             sh "chmod -R 777 */******"
             sh "npm ci"
-            sh "chown -R 115:122 /.npm"
+            sh "chown -R 115:122 '/.npm'"
             sh "npx cypress run --browser chrome"  
             //sh "npm run mochawesome:merge" 
             }
