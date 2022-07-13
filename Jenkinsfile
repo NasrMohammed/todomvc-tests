@@ -12,7 +12,7 @@ pipeline {
             //sh "rm -r mochawesome-report/*"
            // sh "rm -r cypress/screenshots/*"
             sh "chmod -R 777 cypress"
-            sh "sudo npx cypress run --browser chrome"  
+            sh "npx cypress run --browser chrome"  
             //sh "npm run mochawesome:merge" 
             }
         }
