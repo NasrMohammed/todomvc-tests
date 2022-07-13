@@ -11,6 +11,8 @@ pipeline {
             //sh "rm -r cypress/results/*" 
             //sh "rm -r mochawesome-report/*"
            // sh "rm -r cypress/screenshots/*"
+            sh "npm install" 
+            sh "chmod -R 777 *"
             sh "chmod -R 777 cypress"
             sh "npx cypress run --browser chrome"  
             //sh "npm run mochawesome:merge" 
