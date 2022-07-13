@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^10.3.0"
   },
   "dependencies": {
     "ansi-regex": "^5.0.1",
