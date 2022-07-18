@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context('Misc', () => {
+context.skip('Misc', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/misc')
   })
@@ -75,7 +75,7 @@ context('Misc', () => {
     cy.focused().should('have.id', 'description')
   })
 
-  context('Cypress.Screenshot', function () {
+  context.skip('Cypress.Screenshot', function () {
     it('cy.screenshot() - take a screenshot', () => {
       // https://on.cypress.io/screenshot
       cy.screenshot('my-image')
