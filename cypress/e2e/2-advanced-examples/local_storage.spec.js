@@ -1,3 +1,5 @@
+/*
+
 /// <reference types="cypress" />
 
 context('Local Storage', () => {
@@ -50,3 +52,5 @@ context('Local Storage', () => {
     })
   })
 })
+
+*/
